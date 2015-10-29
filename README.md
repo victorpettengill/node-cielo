@@ -10,7 +10,7 @@ npm install node-cielo
 ```js
 
 var ambienteDeProducao = false; // false para ambiente de testes e true para produção
-var cielo = require('./node-cielo/node-cielo.js')(ambienteDeProducao); 
+var cielo = require('node-cielo')(ambienteDeProducao); 
 
 var requestXml = '<?xml version="1.0" encoding="ISO-8859-1"?>\
 <requisicao-captura id="3e22bdd0-2017-4756-80b7-35a532e6c973" versao="1.2.1">\
