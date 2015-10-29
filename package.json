@@ -1,0 +1,27 @@
+{
+  "name": "node-cielo",
+  "version": "1.0.0",
+  "description": "Cliente para WebService Cielo em Node.js",
+  "main": "node-cielo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fmmsilva/node-cielo"
+  },
+  "keywords": [
+    "node",
+    "cielo",
+    "webservice"
+  ],
+  "author": "Felipe Mendonça Marques Silva <fmmsilva@gmail.com> (https://github.com/fmmsilva)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fmmsilva/node-cielo/issues"
+  },
+  "homepage": "https://github.com/fmmsilva/node-cielo",
+  "dependencies": {
+    "iconv-lite": "^0.4.13"
+  }
+}
