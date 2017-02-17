@@ -5,7 +5,7 @@ module.exports = function (ambienteDeProducao) {
 
 
     var options = {
-        hostname: 'qasecommerce.cielo.com.br',
+        hostname: 'ecommerce.cielo.com.br',
         port: 443,
         path: '/servicos/ecommwsec.do',
         secureProtocol: 'TLSv1_method',
@@ -18,6 +18,8 @@ module.exports = function (ambienteDeProducao) {
         },
         method: 'POST'
     };
+    
+    console.log(options);
 
     if (ambienteDeProducao || false) {
         options.hostname = 'ecommerce.cielo.com.br';
