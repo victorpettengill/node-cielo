@@ -1,6 +1,6 @@
 {
   "name": "node-cielo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cliente para WebService Cielo em Node.js",
   "main": "node-cielo.js",
   "scripts": {
