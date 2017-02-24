@@ -18,7 +18,7 @@ module.exports = function (ambienteDeProducao) {
         },
         method: 'POST'
     };
-    
+
     console.log(options);
 
     if (ambienteDeProducao || false) {
@@ -30,9 +30,13 @@ module.exports = function (ambienteDeProducao) {
             var postData = 'mensagem=' + xml;
             options.headers['Content-Length'] = Buffer.byteLength(postData);
             var req = https.request(options, function(res) {
+                var response_data = '';
                 res.on('data', function(chunk) {
                     var data = iconv.decode(chunk, 'iso-8859-1');
-                    callback(null, data)
+                    response_data += data;
+                });
+                res.on('end', function(){
+                    callback(null, response_data);
                 });
             });
             req.write(postData);
